@@ -98,7 +98,7 @@ export default function Experience() {
         marginLeft:'15%'
       }}
     >
-      <Grid container rowSpacing={4} columnSpacing={6}>
+      <Grid container rowSpacing={6} columnSpacing={6}>
         <Grid item xs={12} sm={6}>
           <Item>
             <TextWrapper>

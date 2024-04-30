@@ -40,27 +40,37 @@
   margin-bottom: 15px;
 }
 
-.project-item .view-project {
+.project-links {
   position: absolute;
   bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: bottom 0.9s ease, opacity 0.9s ease;
+}
+
+.project-item:hover .project-links {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.view-project {
   padding: 8px 16px;
   border-color: #000;
   background-color: rgba(178, 176, 176, 0.9);
   color: #000;
   text-decoration: none;
   border-radius: 15px;
-  transition: bottom 0.9s ease, background-color 0.9s ease;
   font-size: 14px;
-  opacity: 0;
+  margin: 0 5px;
 }
 
-.project-item:hover .view-project {
-  bottom: 20px;
-  opacity: 1;
+.view-project:hover {
+  background-color: rgba(76, 145, 119, 0.9);
 }
 
-.project-item .view-project:hover {
-  background-color: rgba(145, 140, 140, 0.9);
-}
+/* .view-project i {
+  margin-left: 5px;
+} */
