@@ -106,7 +106,7 @@ export default function Experience() {
                 Bridgeflair
               </Typography>
               <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif',}}>
-                Full stack Developer, Intern
+                Backend engineer, Intern
               </Typography>
               <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
                 <br></br>
