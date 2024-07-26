@@ -110,7 +110,7 @@ export default function Experience() {
               </Typography>
               <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
                 <br></br>
-                Apr '23 - Feb '24
+                Dec '23 - Mar '24
               </Typography>
             </TextWrapper>
             <ImageWrapper>
