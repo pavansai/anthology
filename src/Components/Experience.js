@@ -110,12 +110,12 @@ export default function Experience() {
               <Typography variant="h6" style={{ fontFamily: '"Inter", sans-serif', fontWeight: 'bold', color: 'black' }}>
                 Murphy USA
               </Typography>
-              <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
-                Java Full Stack Developer
+              <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif',}}>
+                Full stack Developer, Intern
               </Typography>
-              <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
-                <br />
-                Nov 2022 - Sep 2023
+              <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
+                <br></br>
+                Apr '23 - Feb '24
               </Typography>
             </TextWrapper>
             <ImageWrapper>
