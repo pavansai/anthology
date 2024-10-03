@@ -20,7 +20,7 @@ body {
   background-color: #211e1f;
   display: block;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 #bar1 {
@@ -32,7 +32,7 @@ body {
 }
 
 .nav {
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   display: none;
 }
 
@@ -69,7 +69,7 @@ body {
   margin: 30px 0 20px 20px;
   background: radial-gradient(circle, #957c80, #946c73);
   border-radius: 50%;
-  transition: 0.7s ease;
+  transition: 0.4s ease;
 }
 
 .change {

@@ -5,40 +5,48 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Home = () => {
   useEffect(() => {
     const consoleContainer = document.querySelector('.name-animation');
-    const textToAnimate = "PAVAN SAI";
+    const textToAnimate = "pavan sai";
     let i = 0;
 
     const startAnimation = () => {
       if (i < textToAnimate.length) {
-        consoleContainer.innerHTML = textToAnimate.substring(0, i+1) + '<span class="console-underscore">&#95;</span>';
+        consoleContainer.innerHTML = textToAnimate.substring(0, i + 1) + '<span class="console-underscore">&#95;</span>';
         i++;
         setTimeout(startAnimation, 350);
       }
-    }
-
+    };
     startAnimation();
   }, []);
 
   return (
     <div className="home-container">
       <div className="intro-content">
-        <h1>H!, I'M <span className="name-animation"></span></h1>
-        <p className="animated-paragraph">a Software Engineer with 2.8 Yr of experience,</p>
+        <h1>Hello, I'm <span className="name-animation"></span></h1>
+        <p className="animated-paragraph">
+          A full stack engineer with <span style={{ fontWeight: 'bold', color: 'brown' }}>over five years</span> of experience,
+        </p>
         <div className="intro-text">
-          <p className="animated-paragraph">I hold both Bachelor's and Master's degree in <span style={{fontWeight:'bold', color:'grey'}}> `Computer Science`</span>,  I am passionate about Backend and Full stack Development</p>
-          
+          <p className="animated-paragraph">
+            With both Bachelor's and Master's degrees in 
+            <span style={{ fontWeight: 'bold', color: 'brown' }}> Computer Science</span>, over the last 
+            <span style={{ fontWeight: 'bold', color: 'brown' }}> five years</span> I have worked on various Backend and Full Stack Development projects. My journey has involved designing scalable systems, implementing efficient APIs, and delivering robust software solutions. I am passionate about solving complex problems using 
+            <span style={{ fontWeight: 'bold', color: 'brown' }}> Java, Spring Boot, GraphQL</span>, and other cutting-edge technologies.
+          </p> 
         </div>
         <div className="social-links">
           <a href="https://github.com/pavansai"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/pavan-sai-chiru/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/pavansai66/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
       </div>
       <div className="secondary-content">
         <div className="second-intro-content">
-          {/* <h2>Secondary Content</h2> */}
-          <p className="animated-paragraph">With my acedamic projects , I've gained understanding on building web applications that prioritize functionality. This hands-on experience honed by front end technologies. </p>
-          <p className="animated-paragraph" > My full time work experience includes building backend applications with <span style={{fontWeight: 'bold', color: 'grey'}}> `Java, Spring Boot, RESTFULL API's, GraphQL`,</span> </p>
-          {/* <p className="animated-paragraph">I was also involved in Full stack Development, and various life cycles of a Software projects that include designing webpages, deployment, integration and updating functionalities. </p> */}
+          <p className="animated-paragraph">
+            Currently, I am working as a <span style={{ fontWeight: 'bold', color: 'brown' }}> Java Full Stack Developer </span> at Windstream Holdings, where I am responsible for building and optimizing high-performance web applications. My role involves developing robust backend services using 
+            <span style={{ fontWeight: 'bold', color: 'brown' }}> Java, Spring Boot, and GraphQL</span>, as well as designing <span style={{ fontWeight: 'bold', color: 'brown' }}> RESTful APIs</span> that support seamless integration with various systems.
+          </p>
+          <p className="animated-paragraph">
+            I also collaborate closely with <span style={{ fontWeight: 'bold', color: 'brown' }}> front-end </span> teams to ensure the smooth delivery of features and functionalities, leveraging my expertise in full-stack development to provide end-to-end solutions.
+          </p>
         </div>
       </div>
     </div>

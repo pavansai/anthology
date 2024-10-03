@@ -2,14 +2,19 @@ import React from 'react';
 import { Box, Typography, Chip, Grid } from '@mui/material';
 
 const Skills = () => {
-  const languages = ['Java', 'javascript', 'C++', 'Python'];
-  const frontend = ['html5/css', 'reactJs', 'angular', 'TailwindCSS'];
-  const frameworks = ['springboot', 'Django', 'React Native', 'Node.js', 'Next.js'];
-  const tools = ['SQL', 'MongoDB', 'NoSQL', 'Git', 'Gitlab', 'AWS', 'kafka', 'Google Cloud'];
-  const others = ['Data structures', 'Object oriented design', 'Design Patterns'];
+  const languages = ['Java', 'JavaScript', 'C++', 'Python', 'TypeScript', 'Go', 'Ruby'];
+  const frontend = ['HTML5/CSS', 'ReactJS', 'Angular', 'TailwindCSS', 'Vue.js', 'SASS', 'Bootstrap'];
+  const frameworks = ['Spring Boot', 'Django', 'React Native', 'Node.js', 'Next.js', 'Express', 'Flask', 'Koa'];
+  const tools = [
+    'SQL', 'MongoDB', 'NoSQL', 'Git', 'GitLab', 'AWS', 'Kafka', 'Google Cloud', 
+    'Docker', 'Kubernetes', 'Jenkins', 'Postman', 'ElasticSearch'
+  ];
+  const others = [
+    'Data Structures', 'Object-Oriented Design', 'Design Patterns', 'Microservices', 'REST APIs', 'GraphQL', 
+    'Testing/Debugging', 'CI/CD', 'Agile Methodologies', 'Version Control'
+  ];
 
   const getChipColor = (skill) => {
-  
     const colorMap = {
       languages: '#b1b3e6',
       frontend: '#AED2FF',
@@ -17,8 +22,6 @@ const Skills = () => {
       tools: '#D0BFFF',
       others: '#ffa07a',
     };
-
-    
     const category = Object.keys(colorMap).find((cat) =>
       eval(cat).includes(skill)
     );
@@ -44,7 +47,7 @@ const Skills = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black'}}>
+              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black' }}>
                 Languages
               </Typography>
               <Box className="animated-paragraph" sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -52,7 +55,7 @@ const Skills = () => {
                   <Chip
                     key={language}
                     label={language}
-                    sx={{ backgroundColor: getChipColor(language), color:'Black' }}
+                    sx={{ backgroundColor: getChipColor(language), color: 'Black' }}
                   />
                 ))}
               </Box>
@@ -60,7 +63,7 @@ const Skills = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black', }}>
+              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black' }}>
                 Frontend
               </Typography>
               <Box className="animated-paragraph" sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -68,7 +71,7 @@ const Skills = () => {
                   <Chip
                     key={framework}
                     label={framework}
-                    sx={{ backgroundColor: getChipColor(framework),color:'Black' }}
+                    sx={{ backgroundColor: getChipColor(framework), color: 'Black' }}
                   />
                 ))}
               </Box>
@@ -76,7 +79,7 @@ const Skills = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black'}}>
+              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black' }}>
                 Backend/Libraries
               </Typography>
               <Box className="animated-paragraph" sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -84,7 +87,7 @@ const Skills = () => {
                   <Chip
                     key={tool}
                     label={tool}
-                    sx={{ backgroundColor: getChipColor(tool),color:'Black' }}
+                    sx={{ backgroundColor: getChipColor(tool), color: 'Black' }}
                   />
                 ))}
               </Box>
@@ -92,7 +95,7 @@ const Skills = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black'}}>
+              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black' }}>
                 Database/Cloud/Tools
               </Typography>
               <Box className="animated-paragraph" sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -100,7 +103,7 @@ const Skills = () => {
                   <Chip
                     key={tool}
                     label={tool}
-                    sx={{ backgroundColor: getChipColor(tool), color:'Black' }}
+                    sx={{ backgroundColor: getChipColor(tool), color: 'Black' }}
                   />
                 ))}
               </Box>
@@ -108,7 +111,7 @@ const Skills = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black'}}>
+              <Typography className="animated-paragraph" variant="h6" sx={{ mb: 1, color: 'black' }}>
                 Others
               </Typography>
               <Box className="animated-paragraph" sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -116,7 +119,7 @@ const Skills = () => {
                   <Chip
                     key={tool}
                     label={tool}
-                    sx={{ backgroundColor: getChipColor(tool),color:'Black' }}
+                    sx={{ backgroundColor: getChipColor(tool), color: 'Black' }}
                   />
                 ))}
               </Box>
