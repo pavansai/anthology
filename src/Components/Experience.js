@@ -111,11 +111,11 @@ export default function Experience() {
                 Murphy USA
               </Typography>
               <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif',}}>
-                Full stack Developer, Intern
+                Java Full stack Developer
               </Typography>
               <Typography className='animated-paragraph' variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
                 <br></br>
-                Apr '23 - Feb '24
+                Nov '22 - Sept '23
               </Typography>
             </TextWrapper>
             <ImageWrapper>
