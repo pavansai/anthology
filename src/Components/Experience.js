@@ -136,11 +136,11 @@ export default function Experience() {
                 Merck Group
               </Typography>
               <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
-                Java Full Stack Developer - Full-time
+                Sofware engineer 2, Java Full Stack Developer - Full-time
               </Typography>
               <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
                 <br />
-                Jul 2020 - Jul 2022
+                Mar 2019 - Jul 2022
               </Typography>
             </TextWrapper>
             <ImageWrapper>
@@ -161,11 +161,11 @@ export default function Experience() {
                 ANZ
               </Typography>
               <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
-                Java Developer - Full-time
+                Java Developer - seasonal Intern
               </Typography>
               <Typography variant="body2" style={{ fontWeight: 'lighter', fontFamily: '"Inter", sans-serif' }}>
                 <br />
-                Mar 2019 - Jun 2020
+                Mar 2019 - May 2019
               </Typography>
             </TextWrapper>
             <ImageWrapper>
